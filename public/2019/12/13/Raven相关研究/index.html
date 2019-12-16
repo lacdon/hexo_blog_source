@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":true},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="主要信息">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Raven相关研究">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;13&#x2F;Raven%E7%9B%B8%E5%85%B3%E7%A0%94%E7%A9%B6&#x2F;">
+<meta property="og:site_name" content="LACDON">
+<meta property="og:description" content="主要信息">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-12-13T10:16:56.000Z">
+<meta property="article:modified_time" content="2019-12-13T10:35:11.446Z">
+<meta property="article:author" content="Lacdon Lang">
+<meta property="article:tag" content="blockchain">
+<meta property="article:tag" content="cryptocoin">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2019/12/13/Raven%E7%9B%B8%E5%85%B3%E7%A0%94%E7%A9%B6/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>Raven相关研究 | LACDON</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">LACDON</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Lacdon Lang Blog</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">3</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/13/Raven%E7%9B%B8%E5%85%B3%E7%A0%94%E7%A9%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lacdon Lang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LACDON">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Raven相关研究
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-12-13 18:16:56 / Modified: 18:35:11" itemprop="dateCreated datePublished" datetime="2019-12-13T18:16:56+08:00">2019-12-13</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="主要信息"><a href="#主要信息" class="headerlink" title="主要信息"></a>主要信息</h2><ol>
+<li><p>出块时间 : 1分钟</p>
+</li>
+<li><p>块奖励 : 5000 //Jan 4, 2018 1:11:34 AM 创世块头，约2022年减半</p>
+</li>
+<li><p>难度调整周期 ：</p>
+<ul>
+<li>未启用黑暗重力波(DGW h &lt; 338778) : 2016个块, 取余</li>
+<li>启用黑暗重力波动(DGW h &gt;= 338778) : 逐个块调整, 180块</li>
+</ul>
+</li>
+<li><p>减半周期 : 2,100,000个块, 约4年</p>
+</li>
+<li><p>POW limit : 00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+</li>
+<li><p>P2P 通讯版本号 : 70025  <code>X16RV2_VERSION</code></p>
+</li>
+<li><p>magic number : </p>
+<ul>
+<li>主网 : <ul>
+<li>倒 :  0x4e564152 // ‘N’ ‘V’ ‘A’ ‘R’</li>
+<li>正 :  0x5241564e // ‘R’ ‘A’ ‘V’ ‘N’</li>
+</ul>
+</li>
+<li>测试网 : <ul>
+<li>倒 :  0x544e5652 // ‘T’ ‘N’ ‘V’ ‘R’</li>
+<li>正 :  0x52564e54 // ‘R’ ‘V’ ‘N’ ‘T’</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>块头 和比特币一样 80bytes</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CBlockHeader</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">// header</span></span><br><span class="line">    <span class="keyword">int32_t</span> nVersion;        <span class="comment">// 4</span></span><br><span class="line">    uint256 hashPrevBlock;   <span class="comment">// 32</span></span><br><span class="line">    uint256 hashMerkleRoot;  <span class="comment">// 32</span></span><br><span class="line">    <span class="keyword">uint32_t</span> nTime;          <span class="comment">// 4</span></span><br><span class="line">    <span class="keyword">uint32_t</span> nBits;          <span class="comment">// 4</span></span><br><span class="line">    <span class="keyword">uint32_t</span> nNonce;         <span class="comment">// 4</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>算法 </p>
+<ol>
+<li><p>x16r算法 第二代</p>
+<table>
+<thead>
+<tr>
+<th align="left">Number=Hashing algorithm</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">0=Blake</td>
+</tr>
+<tr>
+<td align="left">1=BMW</td>
+</tr>
+<tr>
+<td align="left">2=Groestl</td>
+</tr>
+<tr>
+<td align="left">3=Jh</td>
+</tr>
+<tr>
+<td align="left">4=Keccak</td>
+</tr>
+<tr>
+<td align="left">5=Skein</td>
+</tr>
+<tr>
+<td align="left">6=Luffa</td>
+</tr>
+<tr>
+<td align="left">7=Cubehash</td>
+</tr>
+<tr>
+<td align="left">8=Shavite</td>
+</tr>
+<tr>
+<td align="left">9=Simd</td>
+</tr>
+<tr>
+<td align="left">A=Echo</td>
+</tr>
+<tr>
+<td align="left">B=Hamsi</td>
+</tr>
+<tr>
+<td align="left">C=Fugue</td>
+</tr>
+<tr>
+<td align="left">D=Shabal</td>
+</tr>
+<tr>
+<td align="left">E=Whirlpool</td>
+</tr>
+<tr>
+<td align="left">F=SHA-512</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="参数相关代码"><a href="#参数相关代码" class="headerlink" title="参数相关代码"></a>参数相关代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line">Pow limit = <span class="number">00000f</span>ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</span><br><span class="line"></span><br><span class="line">    CMainParams() &#123;</span><br><span class="line">        strNetworkID = <span class="string">"main"</span>;</span><br><span class="line">        consensus.nSubsidyHalvingInterval = <span class="number">2100000</span>;  <span class="comment">//~ 4 yrs at 1 min block time. 2,100,000</span></span><br><span class="line">        consensus.nBIP34Enabled = <span class="literal">true</span>;</span><br><span class="line">        consensus.nBIP65Enabled = <span class="literal">true</span>; <span class="comment">// 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0</span></span><br><span class="line">        consensus.nBIP66Enabled = <span class="literal">true</span>;</span><br><span class="line">        consensus.nSegwitEnabled = <span class="literal">true</span>;</span><br><span class="line">        consensus.nCSVEnabled = <span class="literal">true</span>;</span><br><span class="line">        consensus.powLimit = uint256S(<span class="string">"00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"</span>);</span><br><span class="line">        consensus.nPowTargetTimespan = <span class="number">2016</span> * <span class="number">60</span>; <span class="comment">// 1.4 days 120960秒，2016分钟,也就是2016/60=33.6小时，1.4天2016个块</span></span><br><span class="line">        consensus.nPowTargetSpacing = <span class="number">1</span> * <span class="number">60</span>; <span class="comment">// 60秒一个块 ， 1分钟一个块</span></span><br><span class="line">        consensus.fPowAllowMinDifficultyBlocks = <span class="literal">false</span>; <span class="comment">//只有测试网允许</span></span><br><span class="line">        consensus.fPowNoRetargeting = <span class="literal">false</span>;</span><br><span class="line">        consensus.nRuleChangeActivationThreshold = <span class="number">1814</span>; <span class="comment">// Approx 90% of 2016</span></span><br><span class="line">        consensus.nMinerConfirmationWindow = <span class="number">2016</span>; <span class="comment">// nPowTargetTimespan / nPowTargetSpacing // 确认时间= 难度调整周期</span></span><br><span class="line">        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].<span class="built_in">bit</span> = <span class="number">28</span>;</span><br><span class="line">        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = <span class="number">1199145601</span>; <span class="comment">// January 1, 2008</span></span><br><span class="line">        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = <span class="number">1230767999</span>; <span class="comment">// December 31, 2008</span></span><br><span class="line">        consensus.vDeployments[Consensus::DEPLOYMENT_ASSETS].<span class="built_in">bit</span> = <span class="number">6</span>;  <span class="comment">//Assets (RIP2)</span></span><br><span class="line">        consensus.vDeployments[Consensus::DEPLOYMENT_ASSETS].nStartTime = <span class="number">1540944000</span>; <span class="comment">// Oct 31, 2018</span></span><br><span class="line">        consensus.vDeployments[Consensus::DEPLOYMENT_ASSETS].nTimeout = <span class="number">1572480000</span>; <span class="comment">// Oct 31, 2019</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">// The best chain should have at least this much work.</span></span><br><span class="line">        consensus.nMinimumChainWork = uint256S(<span class="string">"0x00"</span>); <span class="comment">// 最小工作量</span></span><br><span class="line">        <span class="comment">// By default assume that the signatures in ancestors of this block are valid.</span></span><br><span class="line">        consensus.defaultAssumeValid = uint256S(<span class="string">"0x00"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// The best chain should have at least this much work.</span></span><br><span class="line">        <span class="comment">//<span class="doctag">TODO:</span> This needs to be changed when we re-start the chain</span></span><br><span class="line">        <span class="comment">//consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000000c000c00");</span></span><br><span class="line">        <span class="comment">//TODO - Set this to genesis block</span></span><br><span class="line">        <span class="comment">// By default assume that the signatures in ancestors of this block are valid.</span></span><br><span class="line">        <span class="comment">//consensus.defaultAssumeValid = uint256S("0x0000000000000000003b9ce759c2a087d52abc4266f8f4ebd6d768b89defa50a"); //477890</span></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * The message start string is designed to be unlikely to occur in normal data.</span></span><br><span class="line"><span class="comment">         * The characters are rarely used upper ASCII, not valid as UTF-8, and produce</span></span><br><span class="line"><span class="comment">         * a large 32-bit integer with any alignment.</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">	<span class="comment">// magic number</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment">//主网络</span></span><br><span class="line">	MainNetBitcoinNet=<span class="number">0x4e564152</span><span class="comment">//'N''V''A''R'</span></span><br><span class="line">	<span class="comment">//测试网</span></span><br><span class="line">	TestNetBitcoinNet=<span class="number">0x544e5652</span><span class="comment">//'T''N''V''R'</span></span><br><span class="line">	</span><br><span class="line">        pchMessageStart[<span class="number">0</span>] = <span class="number">0x52</span>; <span class="comment">// R</span></span><br><span class="line">        pchMessageStart[<span class="number">1</span>] = <span class="number">0x41</span>; <span class="comment">// A</span></span><br><span class="line">        pchMessageStart[<span class="number">2</span>] = <span class="number">0x56</span>; <span class="comment">// V</span></span><br><span class="line">        pchMessageStart[<span class="number">3</span>] = <span class="number">0x4e</span>; <span class="comment">// N</span></span><br><span class="line">        nDefaultPort = <span class="number">8767</span>;</span><br><span class="line">        nPruneAfterHeight = <span class="number">100000</span>;</span><br><span class="line">        genesis = CreateGenesisBlock(<span class="number">1514999494</span>, <span class="number">25023712</span>, <span class="number">0x1e00ffff</span>, <span class="number">4</span>, <span class="number">5000</span> * COIN);</span><br><span class="line">        consensus.hashGenesisBlock = genesis.GetX16RHash();</span><br><span class="line">        assert(consensus.hashGenesisBlock == uint256S(<span class="string">"0000006b444bc2f2ffe627be9d9e7e7a0730000870ef6eb6da46c8eae389df90"</span>));</span><br><span class="line">        assert(genesis.hashMerkleRoot == uint256S(<span class="string">"28ff00a867739a352523808d301f504bc4547699398d70faf2266a8bae5f3516"</span>));</span><br><span class="line">        vSeeds.emplace_back(<span class="string">"seed-raven.bitactivate.com"</span>, <span class="literal">false</span>);</span><br><span class="line">        vSeeds.emplace_back(<span class="string">"seed-raven.ravencoin.com"</span>, <span class="literal">false</span>);</span><br><span class="line">        vSeeds.emplace_back(<span class="string">"seed-raven.ravencoin.org"</span>, <span class="literal">false</span>);</span><br><span class="line">        base58Prefixes[PUBKEY_ADDRESS] = <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="keyword">unsigned</span> <span class="keyword">char</span>&gt;(<span class="number">1</span>,<span class="number">60</span>);</span><br><span class="line">        base58Prefixes[SCRIPT_ADDRESS] = <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="keyword">unsigned</span> <span class="keyword">char</span>&gt;(<span class="number">1</span>,<span class="number">122</span>);</span><br><span class="line">        base58Prefixes[SECRET_KEY] =     <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="keyword">unsigned</span> <span class="keyword">char</span>&gt;(<span class="number">1</span>,<span class="number">128</span>);</span><br><span class="line">        base58Prefixes[EXT_PUBLIC_KEY] = &#123;<span class="number">0x04</span>, <span class="number">0x88</span>, <span class="number">0xB2</span>, <span class="number">0x1E</span>&#125;;</span><br><span class="line">        base58Prefixes[EXT_SECRET_KEY] = &#123;<span class="number">0x04</span>, <span class="number">0x88</span>, <span class="number">0xAD</span>, <span class="number">0xE4</span>&#125;;</span><br><span class="line">        vFixedSeeds = <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;SeedSpec6&gt;(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));</span><br><span class="line">        fDefaultConsistencyChecks = <span class="literal">false</span>;</span><br><span class="line">        fRequireStandard = <span class="literal">true</span>;</span><br><span class="line">        fMineBlocksOnDemand = <span class="literal">false</span>;</span><br><span class="line">        fMiningRequiresPeers = <span class="literal">true</span>;</span><br><span class="line">        checkpointData = (CCheckpointData) &#123;</span><br><span class="line">            &#123;</span><br><span class="line">                &#123; <span class="number">535721</span>, uint256S(<span class="string">"0x000000000001217f58a594ca742c8635ecaaaf695d1a63f6ab06979f1c159e04"</span>)&#125;,</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        chainTxData = ChainTxData&#123;</span><br><span class="line">            <span class="comment">// Update as we know more about the contents of the Raven chain</span></span><br><span class="line">            <span class="comment">// Stats as of 000000000000a72545994ce72b25042ea63707fca169ca4deb7f9dab4f1b1798 window size 43200</span></span><br><span class="line">            <span class="number">1543817453</span>, <span class="comment">// * UNIX timestamp of last known number of transactions</span></span><br><span class="line">            <span class="number">2033711</span>,    <span class="comment">// * total number of transactions between genesis and that timestamp</span></span><br><span class="line">                        <span class="comment">//   (the tx=... number in the SetBestChain debug.log lines)</span></span><br><span class="line">            <span class="number">0.1</span>         <span class="comment">// * estimated number of transactions per second after that timestamp</span></span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="comment">/** RVN Start **/</span></span><br><span class="line">        <span class="comment">// Burn Amounts</span></span><br><span class="line">        nIssueAssetBurnAmount = <span class="number">500</span> * COIN;</span><br><span class="line">        nReissueAssetBurnAmount = <span class="number">100</span> * COIN;</span><br><span class="line">        nIssueSubAssetBurnAmount = <span class="number">100</span> * COIN;</span><br><span class="line">        nIssueUniqueAssetBurnAmount = <span class="number">5</span> * COIN;</span><br><span class="line">        <span class="comment">// Burn Addresses</span></span><br><span class="line">        strIssueAssetBurnAddress = <span class="string">"RXissueAssetXXXXXXXXXXXXXXXXXhhZGt"</span>;</span><br><span class="line">        strReissueAssetBurnAddress = <span class="string">"RXReissueAssetXXXXXXXXXXXXXXVEFAWu"</span>;</span><br><span class="line">        strIssueSubAssetBurnAddress = <span class="string">"RXissueSubAssetXXXXXXXXXXXXXWcwhwL"</span>;</span><br><span class="line">        strIssueUniqueAssetBurnAddress = <span class="string">"RXissueUniqueAssetXXXXXXXXXXWEAe58"</span>;</span><br><span class="line">        <span class="comment">//Global Burn Address</span></span><br><span class="line">        strGlobalBurnAddress = <span class="string">"RXBurnXXXXXXXXXXXXXXXXXXXXXXWUo9FV"</span>;</span><br><span class="line">        <span class="comment">// DGW Activation</span></span><br><span class="line">        nDGWActivationBlock = <span class="number">338778</span>;</span><br><span class="line">        nX16RV2ActivationTime = <span class="number">1569945600</span>; <span class="comment">//Tue Oct 01 2019 16:00:00 UTC</span></span><br><span class="line">        nMaxReorganizationDepth = <span class="number">60</span>; <span class="comment">// 60 at 1 minute block timespan is +/- 60 minutes.</span></span><br><span class="line">        nMinReorganizationPeers = <span class="number">4</span>;</span><br><span class="line">        nMinReorganizationAge = <span class="number">60</span> * <span class="number">60</span> * <span class="number">12</span>; <span class="comment">// 12 hours</span></span><br><span class="line">        <span class="comment">/** RVN End **/</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Version.h</span></span><br><span class="line"><span class="comment">//当前版本号为 70025</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> PROTOCOL_VERSION = <span class="number">70025</span>;</span><br><span class="line"><span class="comment">//! initial proto version, to be increased after version/verack negotiation</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> INIT_PROTO_VERSION = <span class="number">209</span>;</span><br><span class="line"><span class="comment">//! In this version, 'getheaders' was introduced.</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> GETHEADERS_VERSION = <span class="number">31800</span>;</span><br><span class="line"><span class="comment">//! assetdata network request is allowed for this version</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> ASSETDATA_VERSION = <span class="number">70017</span>;</span><br><span class="line"><span class="comment">//! disconnect from peers older than this proto version</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> MIN_PEER_PROTO_VERSION = ASSETDATA_VERSION;</span><br><span class="line"><span class="comment">//! nTime field added to CAddress, starting with this version;</span></span><br><span class="line"><span class="comment">//! if possible, avoid requesting addresses nodes older than this</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> CADDR_TIME_VERSION = <span class="number">31402</span>;</span><br><span class="line"><span class="comment">//! BIP 0031, pong message, is enabled for all versions AFTER this one</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> BIP0031_VERSION = <span class="number">60000</span>;</span><br><span class="line"><span class="comment">//! "filter*" commands are disabled without NODE_BLOOM after and including this version</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> NO_BLOOM_VERSION = <span class="number">70011</span>;</span><br><span class="line"><span class="comment">//! "sendheaders" command and announcing blocks with headers starts with this version</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> SENDHEADERS_VERSION = <span class="number">70012</span>;</span><br><span class="line"><span class="comment">//! "feefilter" tells peers to filter invs to you by fee starts with this version</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> FEEFILTER_VERSION = <span class="number">70013</span>;</span><br><span class="line"><span class="comment">//! short-id-based block download starts with this version</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> SHORT_IDS_BLOCKS_VERSION = <span class="number">70014</span>;</span><br><span class="line"><span class="comment">//! not banning for invalid compact blocks starts with this version</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> INVALID_CB_NO_BAN_VERSION = <span class="number">70015</span>;</span><br><span class="line"><span class="comment">//! getassetdata reutrn asstnotfound, and assetdata doesn't have blockhash in the data</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> ASSETDATA_VERSION_UPDATED = <span class="number">70020</span>;</span><br><span class="line"><span class="comment">//! getassetdata reutrn asstnotfound, and assetdata doesn't have blockhash in the data</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> X16RV2_VERSION = <span class="number">70025</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="难度调整代码"><a href="#难度调整代码" class="headerlink" title="难度调整代码"></a>难度调整代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// pow.cpp</span></span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">int</span> <span class="keyword">static</span> <span class="title">DarkGravityWave</span><span class="params">(<span class="keyword">const</span> CBlockIndex* pindexLast, <span class="keyword">const</span> CBlockHeader *pblock, <span class="keyword">const</span> Consensus::ConsensusParams&amp; params)</span> </span>&#123;</span><br><span class="line">    <span class="comment">/* current difficulty formula, dash - DarkGravity v3, written by Evan Duffield - evan@dash.org */</span></span><br><span class="line">    assert(pindexLast != <span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();</span><br><span class="line">    <span class="keyword">const</span> arith_uint256 bnPowLimit = UintToArith256(params.powLimit);</span><br><span class="line">    <span class="keyword">int64_t</span> nPastBlocks = <span class="number">180</span>; <span class="comment">// ~3hr</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// make sure we have at least (nPastBlocks + 1) blocks, otherwise just return powLimit</span></span><br><span class="line">    <span class="keyword">if</span> (!pindexLast || pindexLast-&gt;nHeight &lt; nPastBlocks) &#123;</span><br><span class="line">        <span class="keyword">return</span> bnPowLimit.GetCompact();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (params.fPowAllowMinDifficultyBlocks &amp;&amp; params.fPowNoRetargeting) &#123;</span><br><span class="line">        <span class="comment">// Special difficulty rule:</span></span><br><span class="line">        <span class="comment">// If the new block's timestamp is more than 2 * 1 minutes</span></span><br><span class="line">        <span class="comment">// then allow mining of a min-difficulty block.</span></span><br><span class="line">        <span class="keyword">if</span> (pblock-&gt;GetBlockTime() &gt; pindexLast-&gt;GetBlockTime() + params.nPowTargetSpacing * <span class="number">2</span>)</span><br><span class="line">            <span class="keyword">return</span> nProofOfWorkLimit;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">// Return the last non-special-min-difficulty-rules-block</span></span><br><span class="line">            <span class="keyword">const</span> CBlockIndex *pindex = pindexLast;</span><br><span class="line">            <span class="keyword">while</span> (pindex-&gt;pprev &amp;&amp; pindex-&gt;nHeight % params.DifficultyAdjustmentInterval() != <span class="number">0</span> &amp;&amp;</span><br><span class="line">                   pindex-&gt;nBits == nProofOfWorkLimit)</span><br><span class="line">                pindex = pindex-&gt;pprev;</span><br><span class="line">            <span class="keyword">return</span> pindex-&gt;nBits;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> CBlockIndex *pindex = pindexLast;</span><br><span class="line">    arith_uint256 bnPastTargetAvg;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">unsigned</span> <span class="keyword">int</span> nCountBlocks = <span class="number">1</span>; nCountBlocks &lt;= nPastBlocks; nCountBlocks++) &#123;</span><br><span class="line">        arith_uint256 bnTarget = arith_uint256().SetCompact(pindex-&gt;nBits);</span><br><span class="line">        <span class="keyword">if</span> (nCountBlocks == <span class="number">1</span>) &#123;</span><br><span class="line">            bnPastTargetAvg = bnTarget;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">// <span class="doctag">NOTE:</span> that's not an average really...</span></span><br><span class="line">            bnPastTargetAvg = (bnPastTargetAvg * nCountBlocks + bnTarget) / (nCountBlocks + <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(nCountBlocks != nPastBlocks) &#123;</span><br><span class="line">            assert(pindex-&gt;pprev); <span class="comment">// should never fail</span></span><br><span class="line">            pindex = pindex-&gt;pprev;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function">arith_uint256 <span class="title">bnNew</span><span class="params">(bnPastTargetAvg)</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int64_t</span> nActualTimespan = pindexLast-&gt;GetBlockTime() - pindex-&gt;GetBlockTime();</span><br><span class="line">    <span class="comment">// <span class="doctag">NOTE:</span> is this accurate? nActualTimespan counts it for (nPastBlocks - 1) blocks only...</span></span><br><span class="line">    <span class="keyword">int64_t</span> nTargetTimespan = nPastBlocks * params.nPowTargetSpacing;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (nActualTimespan &lt; nTargetTimespan/<span class="number">3</span>)</span><br><span class="line">        nActualTimespan = nTargetTimespan/<span class="number">3</span>;</span><br><span class="line">    <span class="keyword">if</span> (nActualTimespan &gt; nTargetTimespan*<span class="number">3</span>)</span><br><span class="line">        nActualTimespan = nTargetTimespan*<span class="number">3</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Retarget</span></span><br><span class="line">    bnNew *= nActualTimespan;</span><br><span class="line">    bnNew /= nTargetTimespan;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (bnNew &gt; bnPowLimit) &#123;</span><br><span class="line">        bnNew = bnPowLimit;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> bnNew.GetCompact();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/blockchain/" rel="tag"># blockchain</a>
+              <a href="/tags/cryptocoin/" rel="tag"># cryptocoin</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/12/13/framework/" rel="prev" title="framework">
+      <i class="fa fa-chevron-left"></i> framework
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#主要信息"><span class="nav-number">1.</span> <span class="nav-text">主要信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参数相关代码"><span class="nav-number">2.</span> <span class="nav-text">参数相关代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#难度调整代码"><span class="nav-number">3.</span> <span class="nav-text">难度调整代码</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Lacdon Lang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lacdon" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lacdon" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:lacdonapplication@gmail.com" title="E-Mail → mailto:lacdonapplication@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lacdon Lang</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
